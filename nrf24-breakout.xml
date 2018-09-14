@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/filip/Documents/kicad/nrf24-breakout/nrf24-breakout.sch</source>
+    <date>2018 April 02, Monday 02:20:42</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>nRF24L01 Breakout</title>
+        <company>Kullen Robotics</company>
+        <rev>v1.0</rev>
+        <date/>
+        <source>nrf24-breakout.sch</source>
+        <comment number="1" value="Filip Salomonsson"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC10233</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF</value>
+      <footprint>Capacitors_SMD:C_0805_HandSoldering</footprint>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC102B3</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>nRF24L01</value>
+      <footprint>Socket_Strips:Socket_Strip_Straight_2x04_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_02x04_Odd_Even"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC1035C</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AZ1117-3.3</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-223-3Lead_TabPin2</footprint>
+      <libsource lib="regul" part="AZ1117-3.3"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC10A9A</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x05_Male</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x05_Male"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC10F01</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0805_HandSoldering</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC12AB6</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1kΩ</value>
+      <footprint>Resistors_SMD:R_0805_HandSoldering</footprint>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC12B66</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x05_Male</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x05_Pitch2.54mm</footprint>
+      <libsource lib="conn" part="Conn_01x05_Male"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5AC13953</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="regul" part="AZ1117-1.2">
+      <aliases>
+        <alias>AZ1117-1.5</alias>
+        <alias>AZ1117-1.8</alias>
+        <alias>AZ1117-2.5</alias>
+        <alias>AZ1117-2.85</alias>
+        <alias>AZ1117-3.3</alias>
+        <alias>AZ1117-5.0</alias>
+      </aliases>
+      <description>1A 20V Fixed LDO Linear Regulator, 1.2V, SOT-89/SOT-223/TO-220/TO-252/TO-263</description>
+      <docs>https://www.diodes.com/assets/Datasheets/AZ1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+        <fp>SOT?89*</fp>
+        <fp>TO?220*</fp>
+        <fp>TO?252*</fp>
+        <fp>TO?263*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AZ1117-1.2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x05_Male">
+      <description>Generic connector, single row, 01x05</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x05_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_02x04_Odd_Even">
+      <description>Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*2x??x*mm*</fp>
+        <fp>Connector*:*2x???Pitch*</fp>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_02x04_Odd_Even</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/Library/Application Support/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="regul">
+      <uri>/Library/Application Support/kicad/library/regul.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/Library/Application Support/kicad/library/device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+3V3">
+      <node ref="U1" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J1" pin="2"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="3" name="MOSI">
+      <node ref="J1" pin="6"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="4" name="MISO">
+      <node ref="J3" pin="2"/>
+      <node ref="J1" pin="7"/>
+    </net>
+    <net code="5" name="IRQ">
+      <node ref="J1" pin="8"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="7" name="VCC">
+      <node ref="C1" pin="1"/>
+      <node ref="J2" pin="5"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="8" name="SCK">
+      <node ref="J1" pin="5"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="9" name="CE">
+      <node ref="J2" pin="4"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="10" name="CSN">
+      <node ref="J2" pin="3"/>
+      <node ref="J1" pin="4"/>
+    </net>
+  </nets>
+</export>
